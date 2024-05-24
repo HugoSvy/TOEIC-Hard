@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Vocabulary Flashcards</title>
+    <title>TOEICARDS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Interactive Vocabulary Flashcards</h1>
+        <h1>TOEICARDS</h1>
+        <h3>Interactive Vocabulary Flashcards</h3>
         <div class="list-selector">
             <label for="vocabulary-list">Choose a vocabulary list:</label>
             <select id="vocabulary-list">
@@ -16,6 +17,7 @@
                 <option value="list1">List 1</option>
             </select>
             <button id="start-btn">Start</button>
+            <button id="view-list-btn">View List</button>
         </div>
         <div id="flashcard-container" class="hidden">
             <div id="flashcard">
@@ -27,6 +29,12 @@
             </div>
         </div>
         <div id="known-words-counter" class="hidden">Known words: 0</div>
+        <div id="vocabulary-list-container" class="hidden">
+            <ul id="vocabulary-list-display"></ul>
+        </div>
+        <div id="github-link" class="hidden">
+            <a href="https://github.com/your-github-repo" target="_blank">Like this project on GitHub</a>
+        </div>
     </div>
     <script src="scripts.js"></script>
 </body>
