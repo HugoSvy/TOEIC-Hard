@@ -85,3 +85,6 @@ button:hover {
     padding: 5px 0;
 }
 
+h2 {
+    font-weight: normal; 
+}
