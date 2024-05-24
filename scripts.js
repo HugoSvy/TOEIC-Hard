@@ -4,16 +4,6 @@ const vocabularyLists = {
         { word: "book", translation: "livre" },
         // Ajouter d'autres mots
     ],
-    list2: [
-        { word: "dog", translation: "chien" },
-        { word: "cat", translation: "chat" },
-        // Ajouter d'autres mots
-    ],
-    list3: [
-        { word: "car", translation: "voiture" },
-        { word: "house", translation: "maison" },
-        // Ajouter d'autres mots
-    ],
     toeicWords: [
         { word: "above", translation: "au-dessus de" },
         { word: "achievement", translation: "accomplissement, réussite" },
@@ -76,7 +66,11 @@ function resetFlashcards() {
     document.getElementById('known-words-counter').classList.add('hidden');
     document.getElementById('vocabulary-list-container').classList.add('hidden');
     document.getElementById('known-words-counter').textContent = 'Known words: 0/0';
+    document.getElementById('view-list-btn').classList.remove('revealed');
+
+    //document.querySelector('.revealed').classList.add('hidden');
 }
+
 
 function shuffleFlashcards(list) {
     unknownWords = [...vocabularyLists[list]].sort(() => Math.random() - 0.5);
@@ -149,9 +143,12 @@ flashcard.addEventListener('touchend', (event) => {
     const endX = event.changedTouches[0].clientX;
     if (startX - endX > 50) {
         // Swipe left
-        document.getElementById('dont-know-btn').click();
+        document.getElementById('know-btn').click();
+        
     } else if (endX - startX > 50) {
         // Swipe right
-        document.getElementById('know-btn').click();
+        document.getElementById('dont-know-btn').click();
     }
 });
+
+

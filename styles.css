@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Chivo:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Chivo', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background-color: #f4f4f9;
+    overflow: hidden;
 }
 
 .container {
@@ -61,6 +64,7 @@ button:hover {
 #known-words-counter {
     font-size: 18px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #vocabulary-list-container {
