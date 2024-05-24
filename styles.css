@@ -21,6 +21,10 @@ body {
     display: none;
 }
 
+.revealed {
+    display: none;
+}
+
 .list-selector, .buttons {
     margin: 20px 0;
 }
