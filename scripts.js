@@ -184,6 +184,7 @@ function resetFlashcards() {
     document.getElementById('start-btn').classList.add('hidden');
     document.getElementById('vocabulary-list').classList.add('hidden');
     document.getElementById('liste').classList.add('hidden');
+    document.getElementById('slogan').classList.add('hidden');
 }
 
 
